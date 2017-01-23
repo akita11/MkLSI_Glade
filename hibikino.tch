@@ -5,7 +5,7 @@ LAYER	NWL	drawing		1	0	(0,170,0,255)	t	t	dots3	custom9 ;
 LAYER	PWL	drawing		2	0	(255,85,255,255)	t	t	dots3	custom8 ;
 LAYER	CST	drawing		3	0	(170,0,0,128)	t	t	stipple7	custom10 ;
 LAYER	ACT	drawing		4	0	(170,255,255,255)	t	t	zagr1	custom11 ;
-LAYER	VTN	drawing		5	0	(0,170,0,255)	t	t	dots2	custom12 ;
+LAYER	VTN	drawing		5	0	(0,170,0,255)	t	t	dots2	custom13 ;
 LAYER	VTP	drawing		6	0	(255,0,255,255)	t	t	dots2	custom13 ;
 LAYER	POL	drawing		7	0	(255,124,37,255)	t	t	dots	custom14 ;
 LAYER	NSL	drawing		8	0	(0,170,0,255)	t	t	hZigZag	custom15 ;
