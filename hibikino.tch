@@ -1,18 +1,18 @@
 // Technology file for test
 //
 //	Name	Purpose		gds_num	gds_dtyp	RGBA		sel?	vis?	fillstyle	linestyle
-LAYER	NWL	drawing		1	0	(0,170,0,255)	t	t	dots3	custom9 ;
-LAYER	PWL	drawing		2	0	(255,85,255,255)	t	t	dots3	custom8 ;
-LAYER	CST	drawing		3	0	(170,0,0,128)	t	t	stipple7	custom10 ;
-LAYER	ACT	drawing		4	0	(170,255,255,255)	t	t	zagr1	custom11 ;
-LAYER	VTN	drawing		5	0	(0,170,0,255)	t	t	dots2	custom13 ;
+LAYER	NWL	drawing		1	0	(0,170,0,255)	t	t	dots4	custom9 ;
+LAYER	PWL	drawing		2	0	(255,85,255,255)	t	t	dots4	custom8 ;
+LAYER	CST	drawing		3	0	(170,0,0,128)	t	t	stipple7	custom22 ;
+LAYER	ACT	drawing		4	0	(170,255,255,255)	t	t	dots2	custom11 ;
+LAYER	VTN	drawing		5	0	(0,170,0,255)	t	t	dots2	custom12 ;
 LAYER	VTP	drawing		6	0	(255,0,255,255)	t	t	dots2	custom13 ;
 LAYER	POL	drawing		7	0	(255,124,37,255)	t	t	dots	custom14 ;
-LAYER	NSL	drawing		8	0	(0,170,0,255)	t	t	hZigZag	custom15 ;
-LAYER	PSL	drawing		9	0	(255,0,255,255)	t	t	hZigZag	custom16 ;
+LAYER	NSL	drawing		8	0	(0,170,0,255)	t	t	dots3	custom15 ;
+LAYER	PSL	drawing		9	0	(255,0,255,255)	t	t	dots3	custom16 ;
 LAYER	CNA	drawing		10	0	(255,255,255,255)	t	t	cross	custom17 ;
 LAYER	CNP	drawing		11	0	(255,255,255,255)	t	t	grid	custom18 ;
-LAYER	ML1	drawing		12	0	(0,170,255,255)	t	t	zagr1	custom19 ;
+LAYER	ML1	drawing		12	0	(0,170,255,255)	t	t	custom45	custom19 ;
 LAYER	VIA	drawing		13	0	(207,207,207,255)	t	t	fineCross	plain ;
 LAYER	ML2	drawing		14	0	(204,204,204,255)	t	t	zagl1	custom20 ;
 LAYER	PAS	drawing		15	0	(255,170,0,255)	t	t	stipple11	custom21 ;
@@ -60,19 +60,21 @@ VIA m5_m6
 // Line Styles.
 //
 //   Name  Width  Style
-LINE	custom8	0	DASH ;
-LINE	custom9	0	DASH ;
-LINE	custom10	0	SOLID ;
-LINE	custom11	0	DOT ;
-LINE	custom13	0	DASH ;
-LINE	custom14	2	SOLID ;
-LINE	custom15	0	SOLID ;
-LINE	custom16	0	SOLID ;
-LINE	custom17	2	SOLID ;
-LINE	custom18	2	SOLID ;
-LINE	custom19	2	SOLID ;
-LINE	custom20	2	SOLID ;
+LINE	custom22	1	DOT ;
 LINE	custom21	0	SOLID ;
+LINE	custom20	2	SOLID ;
+LINE	custom19	2	SOLID ;
+LINE	custom18	2	SOLID ;
+LINE	custom17	2	SOLID ;
+LINE	custom16	0	SOLID ;
+LINE	custom15	0	SOLID ;
+LINE	custom14	2	SOLID ;
+LINE	custom13	0	DASH ;
+LINE	custom12	0	DASH ;
+LINE	custom11	0	DOT ;
+LINE	custom10	0	SOLID ;
+LINE	custom9	0	DASH ;
+LINE	custom8	0	DASH ;
 //
 // Stipple Patterns.
 //
@@ -688,4 +690,22 @@ STIPPLE	patt1	STIPPLE
 			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 			0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 
 			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			 ;
+STIPPLE	custom45	STIPPLE
+			0 0 0 0 1 0 0 0 0 0 0 0 1 0 0 0 
+			0 0 0 0 0 1 0 0 0 0 0 0 0 1 0 0 
+			0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 0 
+			0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+			1 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 
+			0 1 0 0 0 0 0 0 0 1 0 0 0 0 0 0 
+			0 0 1 0 0 0 0 0 0 0 1 0 0 0 0 0 
+			0 0 0 1 0 0 0 0 0 0 0 1 0 0 0 0 
+			0 0 0 0 1 0 0 0 0 0 0 0 1 0 0 0 
+			0 0 0 0 0 1 0 0 0 0 0 0 0 1 0 0 
+			0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 0 
+			0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+			1 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 
+			0 1 0 0 0 0 0 0 0 1 0 0 0 0 0 0 
+			0 0 1 0 0 0 0 0 0 0 1 0 0 0 0 0 
+			0 0 0 1 0 0 0 0 0 0 0 1 0 0 0 0 
 			 ;
