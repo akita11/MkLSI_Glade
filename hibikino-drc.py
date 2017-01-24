@@ -1,4 +1,5 @@
 # 2um Hibikino DRC
+# ver1.00 : 2017/1/24: akita11 akita@ifdl.jp
 
 # simpe function to print # errors - unused.
 def printErrors(msg) :
