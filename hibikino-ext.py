@@ -8,6 +8,10 @@ cv = ui.getEditCellView()
 geomBegin(cv)
 lib = cv.lib()
 
+#print "\n# Loading pcells"
+#ui.loadPCell(lib.libName(), "h_nmos_ex")
+#ui.loadPCell(lib.libName(), "p_nmos_ex")
+
 print "# Get raw layers"
 NWL = geomGetShapes("NWL", "drawing")
 PWL = geomGetShapes("PWL", "drawing")
@@ -34,8 +38,8 @@ ndiff     = geomAnd(diff, NSL)
 pdiff     = geomAnd(diff, PSL)
 ntap      = geomAnd(ndiff, NWL)
 ptap      = geomAnd(pdiff, PWL)
-ngate     = geomAnd(gate, ndiff)
-pgate     = geomAnd(gate, pdiff)
+ngate     = geomAnd(gate, NSL) # geomAnd(gate, ndiff) -> x
+pgate     = geomAnd(gate, PSL) # geomAnd(gate, npiff) -> x
 
 print "# Label nodes"
 # This must be done BEFORE geomConnect.
@@ -75,8 +79,8 @@ saveInterconnect([
 # In this case we are using pcell devices which will be
 # created according to the recognition region polygon.
 print "# Extract MOS devices"
-extractMOS("nch_ex", ngate, POL, ndiff, PWL)
-extractMOS("pch_ex", pgate, POL, pdiff, NWL)
+extractMOS("nch", ngate, POL, ndiff, PWL)
+extractMOS("pch", pgate, POL, pdiff, NWL)
 #extractMOS("nch_ex", ngate, polyg, active, psub)
 
 # Extract resistors. Device terminal layers must exist in
