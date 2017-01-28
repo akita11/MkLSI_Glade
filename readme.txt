@@ -1,5 +1,18 @@
 Glade用ひびきの設計関連ファイル(2017/1/24:akita11)
 
+スタセル作成時の指針
+StdCellライブラリを開き、既存のスタセル(inv1.gexなど)に対して、以下の修正・追加を行っていく。
+・名称の変更(末尾の_v2.gexを取る。inv1_v2.gex -> inv1 など)
+・layoutでの信号名ラベル文字列の変更（入力はIA, IB, ...とIから始まる。出力はゲートはO、フリップフロップはQとQB）
+・回路図(schematics)の作成（信号名はlayoutにあわせる。nMOS/pMOSはStdCellライブラリ内のnch/pchを、電源はbacisライブラリ内のVDD/GNDを使用する）
+・シンボル(symbol)の作成（以下の点に留意: inv1のsymbolを参考に）
+  - グリッドは1um単位として、少なくともネット（赤い四角）はグリッドに乗せる（可能な範囲ですべての図形も）
+  - ネット名はlayout, schematicsにあわせる
+  - 全体の大きさは、inv1のものを目安に（極端に大きくor小さくならないように）
+  - 全体の中心がほぼ原点に来るように配置する
+  - cellName, instName、Textを作成時に"Label Use"をdevice label/inst labelを選び、sizeを1.0に
+  - 外枠をboundaryの長方形で囲う
+
 スタンダードセルの使い方
 1. File->New Libでライブラリを作成。このとき、Technologyでhibikino.tchを指定する（ここでレイヤ定義などが設定される）
 2. File->Import->Import GDS2で、stdcell_v2.gdsを指定する。このとき読み込むライブラリを、1.で作成したライブラリに設定する。またはFile->Open Libraryで、ここにある StdCell_v2を指定する。
