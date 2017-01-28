@@ -29,12 +29,17 @@ LVSのかけ方
 
 PCell
 Pcell(parameterized cell)とは、MOSトランジスタなどの要素部品を、その形状パラメータ（ゲート長など）を指定して、自動的にレイアウトを作成する機能。
-1.h_nmos.pyとh_pmos.pyをどこかに置き、環境変数PYTHONPATHを、そのディレクトリに設定する（ない場合は作成、既にある場合は追加）。またはこれらをGladeのディレクトリ(・・・/glade_win64/など)に置く。
-2.New->CellでCellを作成するとき、"CellView is a Pcell"をチェックし、"Pcell script"に、これらの*.pyを指定し、OKすると、h_nmosまたはp_nmosのlayoutが作成される。これらのサイズは標準値で作成される。（このセルをsuper masterと呼ぶ）
-3.使いたいセル(layout)で、インスタンス作成(i)で、CellNameでh_nmosまたはh_pmosを選び、 そのとき"Instance Property"タブで、l（ゲート長）、w（ゲート幅）、m（フィンガー数）、poly_con（ゲートにコンタクトを打つか：これは現在、未実装）を指定してインスタンスを作成すると、そのパラメータの寸法のMOSトランジスタが置かれる。（うまく作成されない場合があるようだが、いったん作成後、インスタンスのプロパティからこれらのパラメータを修正すれば、それに応じたサイズのMOSトランジスタになる）
+(1)nMOS/pMOS用
+1.nmos_master.pyとpmos_master.pyをどこかに置き、環境変数PYTHONPATHを、そのディレクトリに設定する（ない場合は作成、既にある場合は追加）。またはこれらをGladeのディレクトリ(・・・/glade_win64/など)に置く。
+2.New->CellでCellを作成するとき、"CellView is a Pcell"をチェックし、"Pcell script"に、これらの*.pyを指定し、OKすると、nmos_masterまたはnmos_masterのlayoutが作成される。これらのサイズは標準値で作成される。（このセルをsuper masterと呼ぶ）
+3.使いたいセル(layout)で、インスタンス作成(i)で、CellNameでh_nmosまたはh_pmosを選び、 そのとき"Instance Property"タブで、l（ゲート長）、w（ゲート幅）、m（フィンガー数）、poly_con（ゲートにコンタクトを打つか）を指定してインスタンスを作成すると、そのパラメータの寸法のMOSトランジスタが置かれる。（うまく作成されない場合があるようだが、いったん作成後、インスタンスのプロパティからこれらのパラメータを修正すれば、それに応じたサイズのMOSトランジスタになる）
+
+(2)コンタクト・VIA用
+以下のものがある。いずれも横・縦に並べるコンタクトorVIAの個数をnx,nyで指定する。
+・polycon_master.py : POL-ML1+コンタクト(CNP)
+・ncon_master.py : nACT-ML1+コンタクト(CNA)
+・pcon_master.py : pACT-ML1+コンタクト(CNA)
+・ml1via_master.py : ML1-ML2+VIA
 
 Glade操作メモ
 DisplayOption->MiscellaneousのAlways pop up option dialogをはずすと、Moveなどのたびにオプション画面が表示されない（F3で適宜表示できる）
-
-
-

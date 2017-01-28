@@ -15,7 +15,7 @@
 from ui import *
 
 # The entry point. The function name *must* match the filename.
-def h_nmos(cv, w=6, l=2, m=1, poly_con=0) :
+def pmos_master(cv, w=18, l=2, m=1, poly_con=0) :
 	lib = cv.lib()
 	dbu = lib.dbuPerUU()
 	width = int(w * dbu) # gate width
@@ -38,13 +38,30 @@ def h_nmos(cv, w=6, l=2, m=1, poly_con=0) :
 
         # Create gate / poly fingers
 	POL = tech.getLayerNum("POL", "drawing")
+        CNP = tech.getLayerNum("CNP", "drawing")
+        ML1 = tech.getLayerNum("ML1", "drawing")
 	width_gate = width + 2 * GATE_ext
 	for i in range(fingers) :
                 ii = i * 2
                 gate_xi = (CNT_width + 2 * POL_CNT_space + length) * (ii - (fingers - 1))/2
 	        r = Rect(gate_xi - length/2, -width_gate/2, gate_xi + length/2, width_gate/2)
 	        gate = cv.dbCreateRect(r, POL)
-        ## ToDo: create contact if poly_con > 0
+                if poly_con :
+                        r = Rect(gate_xi - (CNT_width + 2 * POL_ovlp_CNT)/2,
+                                 width_gate/2,
+                                 gate_xi + (CNT_width + 2 * POL_ovlp_CNT)/2,
+                                 width_gate/2 + CNT_width + 2 * POL_ovlp_CNT)
+                        gatecon = cv.dbCreateRect(r, POL)
+                        r = Rect(gate_xi - (CNT_width + 2 * ML1_ovlp_CNT)/2,
+                                 width_gate/2,
+                                 gate_xi + (CNT_width + 2 * ML1_ovlp_CNT)/2,
+                                 width_gate/2 + CNT_width + 2 * POL_ovlp_CNT)
+                        gateml1 = cv.dbCreateRect(r, ML1)
+                        r = Rect(gate_xi - CNT_width/2,
+                                 width_gate/2 + POL_ovlp_CNT,
+                                 gate_xi + CNT_width/2,
+                                 width_gate/2 + POL_ovlp_CNT + CNT_width)
+                        gatecnp = cv.dbCreateRect(r, CNP)
                 
 	# Create S/D contacts
 	CNA = tech.getLayerNum("CNA", "drawing")
@@ -67,14 +84,13 @@ def h_nmos(cv, w=6, l=2, m=1, poly_con=0) :
 	active = cv.dbCreateRect(r, ACT)
 
         # Create NSL
-	NSL = tech.getLayerNum("NSL", "drawing")
+	NSL = tech.getLayerNum("PSL", "drawing")
 	length_nsl = length_act + NSL_ovlp_ACT * 2
         width_nsl = width + NSL_ovlp_ACT * 2
 	r = Rect(-length_nsl/2, -width_nsl/2, length_nsl/2, width_nsl/2)
 	nsl = cv.dbCreateRect(r, NSL)
 
 	# Create ML1
-        ML1 = tech.getLayerNum("ML1", "drawing")
         length_ml1 = CNT_width + 2 * ML1_ovlp_CNT
         for i in range(fingers + 1) :
                 ii = i * 2
@@ -91,7 +107,7 @@ def h_nmos(cv, w=6, l=2, m=1, poly_con=0) :
 	cst = cv.dbCreateRect(r, CST)
 
         # Create PWL
-	PWL = tech.getLayerNum("PWL", "drawing")
+	PWL = tech.getLayerNum("NWL", "drawing")
 	length_pwl = length_act + PWL_ovlp_ACT * 2
         width_pwl = width + PWL_ovlp_ACT * 2
 	r = Rect(-length_pwl/2, -width_pwl/2, length_pwl/2, width_pwl/2)
