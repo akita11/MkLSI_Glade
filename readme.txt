@@ -1,4 +1,4 @@
-Glade—p‚Ð‚Ñ‚«‚ÌÝŒvŠÖ˜Aƒtƒ@ƒCƒ‹(2017/1/24:akita11)
+Glade—p‚Ð‚Ñ‚«‚ÌÝŒvŠÖ˜Aƒtƒ@ƒCƒ‹(akita11)
 
 ƒXƒ^ƒZƒ‹ì¬Žž‚ÌŽwj
 StdCellƒ‰ƒCƒuƒ‰ƒŠ‚ðŠJ‚«AŠù‘¶‚ÌƒXƒ^ƒZƒ‹(inv1.gex‚È‚Ç)‚É‘Î‚µ‚ÄAˆÈ‰º‚ÌC³E’Ç‰Á‚ðs‚Á‚Ä‚¢‚­B
@@ -12,6 +12,7 @@ StdCellƒ‰ƒCƒuƒ‰ƒŠ‚ðŠJ‚«AŠù‘¶‚ÌƒXƒ^ƒZƒ‹(inv1.gex‚È‚Ç)‚É‘Î‚µ‚ÄAˆÈ‰º‚ÌC³E’Ç‰Á‚
   - ‘S‘Ì‚Ì’†S‚ª‚Ù‚ÚŒ´“_‚É—ˆ‚é‚æ‚¤‚É”z’u‚·‚é
   - cellName, instNameAText‚ðì¬Žž‚É"Label Use"‚ðdevice label/inst label‚ð‘I‚ÑAsize‚ð1.0‚É
   - ŠO˜g‚ðboundary‚Ì’·•ûŒ`‚ÅˆÍ‚¤
+¦‰Â”\‚È‚ç‚ÎAschematic‚Æsymbol‚ÅAVDD/GND‚ðbasic‚ÌƒVƒ“ƒ{ƒ‹‚Å‚Í‚È‚­Pin‚Æ‚µ‚Ä’u‚¢‚½‚à‚ÌiView–¼‚Ì––”ö‚ÉP‚ð‚Â‚¯‚éj‚àì¬(inv1‚ðŽQÆ)B‚±‚ê‚Í“dŒ¹“dˆ³‚ª•Ê‚È‚Ç“dŒ¹‚ª•ÊŒn“‚Ìê‡‚ÉŽg—p‚·‚éB‚È‚¨Ý’è‚Å"NetUse"‚ÅPOWER/GND‚ðŽw’è‚·‚éB
 
 ƒXƒ^ƒ“ƒ_[ƒhƒZƒ‹‚ÌŽg‚¢•û
 1. File->New Lib‚Åƒ‰ƒCƒuƒ‰ƒŠ‚ðì¬B‚±‚Ì‚Æ‚«ATechnology‚Åhibikino.tch‚ðŽw’è‚·‚éi‚±‚±‚ÅƒŒƒCƒ„’è‹`‚È‚Ç‚ªÝ’è‚³‚ê‚éj
