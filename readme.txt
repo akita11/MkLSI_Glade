@@ -10,8 +10,13 @@ StdCellƒ‰ƒCƒuƒ‰ƒŠ‚ðŠJ‚«AŠù‘¶‚ÌƒXƒ^ƒZƒ‹(inv1.gex‚È‚Ç)‚É‘Î‚µ‚ÄAˆÈ‰º‚ÌC³E’Ç‰Á‚
   - ƒlƒbƒg–¼‚Ílayout, schematics‚É‚ ‚í‚¹‚é
   - ‘S‘Ì‚Ì‘å‚«‚³‚ÍAinv1‚Ì‚à‚Ì‚ð–ÚˆÀ‚Éi‹É’[‚É‘å‚«‚­or¬‚³‚­‚È‚ç‚È‚¢‚æ‚¤‚Éj
   - ‘S‘Ì‚Ì’†S‚ª‚Ù‚ÚŒ´“_‚É—ˆ‚é‚æ‚¤‚É”z’u‚·‚é
-  - cellName, instNameAText‚ðì¬Žž‚É"Label Use"‚ðdevice label/inst label‚ð‘I‚ÑAsize‚ð1.0‚É
+  - cellName, instNameAText‚ðì¬Žž‚É"Label Use"‚ðdevice label/inst label‚ð‘I‚ÑAsize‚ð1.0‚É(‚±‚ê‚ç‚Ìproperty‚ÌLabel Type‚ªA"NLPlabel"‚É‚È‚é‚Í‚¸)
+  - (‰Â”\‚È‚ç‚Î)ƒgƒ‰ƒ“ƒWƒXƒ^¡–@‚ðA"[@wp:wp=%:wp=18um]", "[@wn:wn=%:wn=6um]", "[@lp:lp=%:lp=2um]", "[@ln:ln=%:ln=2um]"‚Ì4‚Âƒ‰ƒxƒ‹(annotateƒŒƒCƒ„ENLPlabel‚Å)‚Å‘‚¢‚Ä‚¨‚­B
+  - ƒVƒ“ƒ{ƒ‹•`‰æŽž‚Ì‰½‚à‘I‘ð‚µ‚Ä‚¢‚È‚¢ó‘Ô‚ÅQueryProperty(Q)‚©‚ç‚±‚ÌƒVƒ“ƒ{ƒ‹‚ÌƒvƒƒpƒeƒB‚ðÝ’è‚Å‚«‚éB‚±‚±‚ÅAPropertyƒ^ƒu‚ÉAˆÈ‰º‚Ì2‚Â‚ÌƒvƒƒpƒeƒB‚ð’Ç‰Ái‚¢‚¸‚ê‚àŒ^‚ÍstringA’l‚ÍƒŒƒCƒAƒEƒg‚É‚ ‚í‚¹‚é‚ªƒXƒ^ƒZƒ‹‚ÍŠî–{“I‚É‚±‚Ì¡–@‚Ì‚Í‚¸j
+    * NLPDeviceFormat -> [@instName] [|I:%] [|O:%] inv [@wp:wp=%:wp=18u] [@wn:wn=%:wn=6u] [@lp:lp=%:lp=2u] [@ln:ln=%:ln=2u]
+    * defaultParams -> wp=16u wn=6u lp=2u ln=2u
   - ŠO˜g‚ðboundary‚Ì’·•ûŒ`‚ÅˆÍ‚¤
+
 ¦‰Â”\‚È‚ç‚ÎAschematic‚Æsymbol‚ÅAVDD/GND‚ðbasic‚ÌƒVƒ“ƒ{ƒ‹‚Å‚Í‚È‚­Pin‚Æ‚µ‚Ä’u‚¢‚½‚à‚ÌiView–¼‚Ì––”ö‚ÉP‚ð‚Â‚¯‚éj‚àì¬(inv1‚ðŽQÆ)B‚±‚ê‚Í“dŒ¹“dˆ³‚ª•Ê‚È‚Ç“dŒ¹‚ª•ÊŒn“‚Ìê‡‚ÉŽg—p‚·‚éB‚È‚¨Ý’è‚Å"NetUse"‚ÅPOWER/GND‚ðŽw’è‚·‚éB
 
 ƒXƒ^ƒ“ƒ_[ƒhƒZƒ‹‚ÌŽg‚¢•û
