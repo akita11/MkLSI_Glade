@@ -8,6 +8,7 @@ StdCellƒ‰ƒCƒuƒ‰ƒŠ‚ðŠJ‚«AŠù‘¶‚ÌƒXƒ^ƒZƒ‹(inv1.gex‚È‚Ç)‚É‘Î‚µ‚ÄAˆÈ‰º‚ÌC³E’Ç‰Á‚
 EƒVƒ“ƒ{ƒ‹(symbol)‚Ìì¬iˆÈ‰º‚Ì“_‚É—¯ˆÓ: inv1‚Ìsymbol‚ðŽQl‚Éj
   - ƒOƒŠƒbƒh‚Í1um’PˆÊ‚Æ‚µ‚ÄA­‚È‚­‚Æ‚àƒlƒbƒgiÔ‚¢ŽlŠpj‚ÍƒOƒŠƒbƒh‚Éæ‚¹‚éi‰Â”\‚È”ÍˆÍ‚Å‚·‚×‚Ä‚Ì}Œ`‚àj
   - ƒlƒbƒg–¼‚Ílayout, schematics‚É‚ ‚í‚¹‚é
+  - net‚ðì‚é‚Æ‚«‚ÍA–¼‘O‚ðŽw’è‚·‚éi‹ó—“‚Åì¬‚µ‚Ä‚ ‚Æ‚©‚ç–¼Ì•ÏXA‚¾‚Æ‚¤‚Ü‚­‚¢‚©‚È‚¢ê‡‚ ‚èjB‚È‚¨net‚ÌProperty‚Å‚ÍAinstPin=1‚Æ‚È‚Á‚Ä‚¢‚é‚Í‚¸Binet‰ñ˜H}‚ÌƒlƒbƒgApin=ƒVƒ“ƒ{ƒ‹ã‚ÌÚ‘±“_‚ÅA—¼ŽÒ‚Íˆê”Ê‚É‚Íˆê’v‚·‚éj
   - ‘S‘Ì‚Ì‘å‚«‚³‚ÍAinv1‚Ì‚à‚Ì‚ð–ÚˆÀ‚Éi‹É’[‚É‘å‚«‚­or¬‚³‚­‚È‚ç‚È‚¢‚æ‚¤‚Éj
   - ‘S‘Ì‚Ì’†S‚ª‚Ù‚ÚŒ´“_‚É—ˆ‚é‚æ‚¤‚É”z’u‚·‚é
   - cellName, instNameAText‚ðì¬Žž‚É"Label Use"‚ðdevice label/inst label‚ð‘I‚ÑAsize‚ð1.0‚É(‚±‚ê‚ç‚Ìproperty‚ÌLabel Type‚ªA"NLPlabel"‚É‚È‚é‚Í‚¸)
@@ -16,6 +17,8 @@ StdCellƒ‰ƒCƒuƒ‰ƒŠ‚ðŠJ‚«AŠù‘¶‚ÌƒXƒ^ƒZƒ‹(inv1.gex‚È‚Ç)‚É‘Î‚µ‚ÄAˆÈ‰º‚ÌC³E’Ç‰Á‚
     * NLPDeviceFormat -> [@instName] [|I:%] [|O:%] inv [@wp:wp=%:wp=18u] [@wn:wn=%:wn=6u] [@lp:lp=%:lp=2u] [@ln:ln=%:ln=2u]
     * defaultParams -> wp=16u wn=6u lp=2u ln=2u
   - ŠO˜g‚ðboundary‚Ì’·•ûŒ`‚ÅˆÍ‚¤
+  - symbol‚ðì¬‚µ‚½‚çA‰½‚à‘I‘ð‚µ‚Ä‚¢‚È‚¢ó‘Ô‚ÅƒZƒ‹‚ÌProperty‚ð•\Ž¦‚³‚¹ANum Net‚ÆNum Pin‚ªA•`‰æ‚µ‚Ä‚ ‚é’[Žq‚Ì”‚Æˆê’v‚µ‚Ä‚¢‚é‚±‚Æ‚ðŠm”F‚·‚éB
+  - •Û‘¶‘O‚ÉCheck->CheckCellview‚µ‚½‚Ù‚¤‚ª‚¢‚¢B
 
 ¦‰Â”\‚È‚ç‚ÎAschematic‚Æsymbol‚ÅAVDD/GND‚ðbasic‚ÌƒVƒ“ƒ{ƒ‹‚Å‚Í‚È‚­Pin‚Æ‚µ‚Ä’u‚¢‚½‚à‚ÌiView–¼‚Ì––”ö‚ÉP‚ð‚Â‚¯‚éj‚àì¬(inv1‚ðŽQÆ)B‚±‚ê‚Í“dŒ¹“dˆ³‚ª•Ê‚È‚Ç“dŒ¹‚ª•ÊŒn“‚Ìê‡‚ÉŽg—p‚·‚éB‚È‚¨Ý’è‚Å"NetUse"‚ÅPOWER/GND‚ðŽw’è‚·‚éB
 
