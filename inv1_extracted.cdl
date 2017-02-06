@@ -1,0 +1,24 @@
+*******************************************************************************
+* CDL netlist
+*
+* Library : StdCell
+* Top Cell Name: inv1
+* View Name: extracted
+* Netlist created: 6.2.2017
+*******************************************************************************
+
+*.SCALE METER
+*.GLOBAL Gnd Vdd
+
+*******************************************************************************
+* Library Name: StdCell
+* Cell Name:    inv1
+* View Name:    extracted
+*******************************************************************************
+
+.SUBCKT inv1 O I
+*.PININFO O:B I:B
+
+MM1 O I Vdd Vdd pch w=1.8e-05 l=2e-06 as=1.44e-10 ps=3.4e-05 ad=1.44e-10 pd=3.4e-05 $X=1e-05 $Y=7.5e-05
+MM0 O I Gnd Gnd nch w=6e-06 l=2e-06 as=4.8e-11 ps=2.2e-05 ad=4.8e-11 pd=2.2e-05 $X=1e-05 $Y=2.6e-05
+.ENDS
