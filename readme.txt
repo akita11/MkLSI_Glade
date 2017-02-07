@@ -6,6 +6,8 @@ StdCellƒ‰ƒCƒuƒ‰ƒŠ‚ðŠJ‚«AŠù‘¶‚ÌƒXƒ^ƒZƒ‹(inv1.gex‚È‚Ç)‚É‘Î‚µ‚ÄAˆÈ‰º‚ÌC³E’Ç‰Á‚
 Elayout‚Å‚ÌM†–¼ƒ‰ƒxƒ‹•¶Žš—ñ‚Ì•ÏXi“ü—Í‚ÍIA, IB, ...‚ÆI‚©‚çŽn‚Ü‚éBo—Í‚ÍƒQ[ƒg‚ÍOAƒtƒŠƒbƒvƒtƒƒbƒv‚ÍQ‚ÆQBj
 E‰ñ˜H}(schematics)‚Ìì¬iM†–¼‚Ílayout‚É‚ ‚í‚¹‚éBnMOS/pMOS‚ÍStdCellƒ‰ƒCƒuƒ‰ƒŠ“à‚Ìnch/pch‚ðA“dŒ¹‚Íbacisƒ‰ƒCƒuƒ‰ƒŠ“à‚ÌVDD/GND‚ðŽg—p‚·‚éj
 EƒVƒ“ƒ{ƒ‹(symbol)‚Ìì¬iˆÈ‰º‚Ì“_‚É—¯ˆÓ: inv1‚Ìsymbol‚ðŽQl‚Éj
+  - •K‚¸Aschematicsì¬¨create cellview from cellview‚Ì—¬‚ê‚Åsymbol—p‚ÌƒZƒ‹‚ðì¬‚µAŽ©“®¶¬‚³‚ê‚½ƒsƒ“‚ÍÁ‚³‚È‚¢
+    Ž©“®¶¬‚³‚ê‚½ƒsƒ“‚ðÁ‚µ‚Ä‚µ‚Ü‚¤‚ÆAì¬‚µ‚½symbol‚ð‘¼‚ÌƒZƒ‹“à‚ÅŒÄ‚Ño‚µ‚½ÛA‘¼‚Ìsymbol‚Æ‚ÌÚ‘±‚ª”FŽ¯‚³‚ê‚È‚¢
   - ƒOƒŠƒbƒh‚Í1um’PˆÊ‚Æ‚µ‚ÄA­‚È‚­‚Æ‚àƒlƒbƒgiÔ‚¢ŽlŠpj‚ÍƒOƒŠƒbƒh‚Éæ‚¹‚éi‰Â”\‚È”ÍˆÍ‚Å‚·‚×‚Ä‚Ì}Œ`‚àj
   - ƒlƒbƒg–¼‚Ílayout, schematics‚É‚ ‚í‚¹‚é
   - net‚ðì‚é‚Æ‚«‚ÍA–¼‘O‚ðŽw’è‚·‚éi‹ó—“‚Åì¬‚µ‚Ä‚ ‚Æ‚©‚ç–¼Ì•ÏXA‚¾‚Æ‚¤‚Ü‚­‚¢‚©‚È‚¢ê‡‚ ‚èjB‚È‚¨net‚ÌProperty‚Å‚ÍAinstPin=1‚Æ‚È‚Á‚Ä‚¢‚é‚Í‚¸Binet‰ñ˜H}‚ÌƒlƒbƒgApin=ƒVƒ“ƒ{ƒ‹ã‚ÌÚ‘±“_‚ÅA—¼ŽÒ‚Íˆê”Ê‚É‚Íˆê’v‚·‚éj
