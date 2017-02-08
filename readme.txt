@@ -1,5 +1,54 @@
 Glade—p‚Ð‚Ñ‚«‚ÌÝŒvŠÖ˜Aƒtƒ@ƒCƒ‹(akita11)
 
+›ƒXƒ^ƒ“ƒ_[ƒhƒZƒ‹‚ÌŽg‚¢•û
+1. https://github.com/akita11/MkLSI_Glade‚©‚çƒtƒ@ƒCƒ‹‚ðˆêŽ®ƒ_ƒEƒ“ƒ[ƒh‚µ‚Ä“WŠJ‚·‚éB
+2. Glade‚ÌOpen->Library‚©‚çA“WŠJƒtƒHƒ‹ƒ_“à‚ÌStdCell‚ðŽw’èBinv1‚È‚Ç‚Ì˜_—ƒQ[ƒg‚Ìlayout, symbol, schematic‚ª‚ ‚é‚Í‚¸B
+3. V‹K‚ÉÝŒv—p‚Ìƒ‰ƒCƒuƒ‰ƒŠ‚ðAFile->New Lib‚Åƒ‰ƒCƒuƒ‰ƒŠ‚ðì¬B‚±‚Ì‚Æ‚«ATechnology‚Åhibikino.tch‚ðŽw’è‚·‚éi‚±‚±‚ÅƒŒƒCƒ„’è‹`‚È‚Ç‚ªÝ’è‚³‚ê‚éj¦‰ñ˜H}ì¬‚ÍˆÈ‰º‚àŽQÆ
+3. V‚µ‚¢schematics‚âlayout‚ÌƒZƒ‹‚ð‚Â‚­‚Á‚ÄA‚»‚±‚ÉStdCell‚©‚çƒXƒ^ƒZƒ‹(˜_—ƒQ[ƒg)‚ânch/pch(’P‘Ì‚ÌnMOS/pMOS)AP-Cell‚È‚Ç‚ðŒÄ‚Ño‚µ‚Ä‚Â‚È‚¢‚Å‰ñ˜H‚ð‚Â‚­‚éB¦P-Cell‚É‚Â‚¢‚Ä‚ÍˆÈ‰º‚ðŽQÆ
+4. DRC‚âLVS‚ÅŒŸØ‚·‚é
+
+›DRC‚Ì‚©‚¯‚©‚½
+Verify->DRC->Run DRC (Shift+D)‚ÅA"hibikino-drc.py" ‚ðŽw’è‚µ‚ÄDRC‚ð‚©‚¯‚éB
+ƒGƒ‰[‚ª‚ ‚ê‚ÎVerify->DRC->View DRC Errors‚ÅŠm”F‚Å‚«‚é
+
+›‰ñ˜H’Šo‚ÌŽg‚¢•û
+Verify->Extract->RunLVE‚ÅA"hibikino-ext.py"‚ðŽw’è‚·‚é‚ÆA‚»‚ÌƒZƒ‹‚É‘Î‚µ‚Äextracted‚Æ‚¢‚¤ƒrƒ…[‚ª‚Å‚«‚éB‰E‰º‚Ì"Net Browser"‚ÉAƒlƒbƒg–¼‚ªŒ»‚êA‚Ç‚ê‚©‚ð‘I‘ð‚·‚é‚ÆA‚»‚Ìƒlƒbƒg‚É‘Î‰ž‚·‚éƒIƒuƒWƒFƒNƒg‚ªƒnƒCƒ‰ƒCƒg‚³‚ê‚éB‚È‚¨ƒŒƒCƒAƒEƒg‚ÅAML1/ML2/POL‚É“¯‚¶ƒŒƒCƒ„‚Å‘‚¢‚½•¶Žš—ñi•¶Žš—ñ‚Ì§Œä“_‚ª‘ÎÛ}Œ`‚Ì’†‚É‚ ‚é‚±‚Æj‚ªA‚»‚Ìƒlƒbƒg‚Ìƒlƒbƒg–¼‚É‚È‚éBƒlƒbƒgƒŠƒXƒgƒtƒ@ƒCƒ‹‚Ìo—Í‚ÍAFile->Export->Export CDL‚ÅAi‚Ù‚ÚjspiceŒ`Ž®‚Åo—Í‚Å‚«‚éB
+
+›‰ñ˜H}“ü—Í
+EMOS‚ÍStdCell“à‚ÌƒZƒ‹nch/pch‚ðŽg‚¤B
+E“üo—Í‚ÍACreate->Pin‚Åƒsƒ“‚Æ‚µ‚ÄA–¼Ì‚ð‚Â‚¯‚Äì¬B
+EVDD/GND“™‚ÍAbasicƒ‰ƒCƒuƒ‰ƒŠ’†‚Ìvdd/gnd‚ðŽg‚¤B‚Ü‚½‚Í“üo—Í‚Æ“¯‚¶‚­ƒsƒ“‚Æ‚µ‚Äì¬‚·‚éB
+E‚±‚ê‚ç‚Ì’[ŽqiÔ‚¢ŽlŠpj‚ðWire‚ÅŒ‹‚ÔB
+‚È‚¨Wire‚ÍÅ‰‚Íƒlƒbƒg–¼‚ª‚Â‚¢‚Ä‚¢‚È‚¢‚ªACheck Cellview‚·‚é‚Æƒlƒbƒg–¼‚ª‚Â‚­B
+‚Â‚È‚ª‚Á‚Ä‚¢‚é‚Í‚¸‚È‚Ì‚É‚Â‚È‚ª‚Á‚Ä‚¢‚È‚¢i•‚‚¢‚Ä‚¢‚éjA‚Æ‚¢‚¤ƒGƒ‰[‚ªo‚é‚±‚Æ‚ª‚ ‚é‚ªAÄ“xCheck Cellview‚·‚é‚ÆŽ¡‚é‚±‚Æ‚à‚ ‚éi“ä‹““®jB
+’[“_‚Åwire‚Ì2‰ñ–Ú‚ðƒNƒŠƒbƒN‚·‚é‚ÆAwire”zü‚ªI‚í‚é‚Ì‚ÅA‚»‚ê‚Å‚Â‚È‚ª‚Á‚Ä‚¢‚é‚©‚Í”»’f‚Å‚«‚éi’[“_ã‚ÅƒNƒŠƒbƒN‚µ‚È‚¢‚Æwire”zü‚ª‘±‚­jB
+File->Export¨Export CDL‚Åi‚Ù‚ÚjspiceŒ`Ž®‚ÌƒlƒbƒgƒŠƒXƒg‚ðo—Í‚Å‚«‚éB
+
+›LVS‚Ì‚©‚¯•û
+1.ƒŒƒCƒAƒEƒg("layout")‚ðŠJ‚«Aª‚ÌŽè‡‚Å‰ñ˜H’ŠoB"extracted"ƒrƒ…[‚ª¶¬‚³‚ê‚éB
+2."extracted"ƒrƒ…[‚ðŠJ‚«A‚»‚±‚©‚çVerify->LVS->Run LVS‚ÅLVS‚ðŽÀsB‰æ–Ê‚Ì‰E‘¤‚Åª‚Å‰ñ˜H}‚©‚çexport‚µ‚½ƒlƒbƒgƒŠƒXƒg(CDLŒ`Ž®)‚ðŽw’è‚·‚éB
+3.LVS‚ªŽÀŽ{‚³‚ê‚éB‚È‚¨MOSƒgƒ‰ƒ“ƒWƒXƒ^‚ÌƒTƒCƒY‚Ì•sˆê’v‚ÍŒŸo‚³‚ê‚È‚¢–Í—liÚ×–¢Šm”FjB
+
+›P-Cell
+P-Cell(parameterized cell)‚Æ‚ÍAMOSƒgƒ‰ƒ“ƒWƒXƒ^‚È‚Ç‚Ì—v‘f•”•i‚ðA‚»‚ÌŒ`óƒpƒ‰ƒ[ƒ^iƒQ[ƒg’·‚È‚Çj‚ðŽw’è‚µ‚ÄAŽ©“®“I‚ÉƒŒƒCƒAƒEƒg‚ðì¬‚·‚é‹@”\B
+(1)nMOS/pMOS—p
+1.nmos_master.py‚Æpmos_master.py‚ð‚Ç‚±‚©‚É’u‚«AŠÂ‹«•Ï”PYTHONPATH‚ðA‚»‚ÌƒfƒBƒŒƒNƒgƒŠ‚ÉÝ’è‚·‚éi‚È‚¢ê‡‚Íì¬AŠù‚É‚ ‚éê‡‚Í’Ç‰ÁjB‚Ü‚½‚Í‚±‚ê‚ç‚ðGlade‚ÌƒfƒBƒŒƒNƒgƒŠ(EEE/glade_win64/‚È‚Ç)‚É’u‚­B
+2.New->Cell‚ÅCell‚ðì¬‚·‚é‚Æ‚«A"CellView is a Pcell"‚ðƒ`ƒFƒbƒN‚µA"Pcell script"‚ÉA‚±‚ê‚ç‚Ì*.py‚ðŽw’è‚µAOK‚·‚é‚ÆAnmos_master‚Ü‚½‚Ínmos_master‚Ìlayout‚ªì¬‚³‚ê‚éB‚±‚ê‚ç‚ÌƒTƒCƒY‚Í•W€’l‚Åì¬‚³‚ê‚éBi‚±‚ÌƒZƒ‹‚ðsuper master‚ÆŒÄ‚Ôj
+3.Žg‚¢‚½‚¢ƒZƒ‹(layout)‚ÅAƒCƒ“ƒXƒ^ƒ“ƒXì¬(i)‚ÅACellName‚Åh_nmos‚Ü‚½‚Íh_pmos‚ð‘I‚ÑA ‚»‚Ì‚Æ‚«"Instance Property"ƒ^ƒu‚ÅAliƒQ[ƒg’·jAwiƒQ[ƒg•jAmiƒtƒBƒ“ƒK[”jApoly_coniƒQ[ƒg‚ÉƒRƒ“ƒ^ƒNƒg‚ð‘Å‚Â‚©j‚ðŽw’è‚µ‚ÄƒCƒ“ƒXƒ^ƒ“ƒX‚ðì¬‚·‚é‚ÆA‚»‚Ìƒpƒ‰ƒ[ƒ^‚Ì¡–@‚ÌMOSƒgƒ‰ƒ“ƒWƒXƒ^‚ª’u‚©‚ê‚éBi‚¤‚Ü‚­ì¬‚³‚ê‚È‚¢ê‡‚ª‚ ‚é‚æ‚¤‚¾‚ªA‚¢‚Á‚½‚ñì¬ŒãAƒCƒ“ƒXƒ^ƒ“ƒX‚ÌƒvƒƒpƒeƒB‚©‚ç‚±‚ê‚ç‚Ìƒpƒ‰ƒ[ƒ^‚ðC³‚·‚ê‚ÎA‚»‚ê‚É‰ž‚¶‚½ƒTƒCƒY‚ÌMOSƒgƒ‰ƒ“ƒWƒXƒ^‚É‚È‚éj
+
+(2)ƒRƒ“ƒ^ƒNƒgEVIA—p
+ˆÈ‰º‚Ì‚à‚Ì‚ª‚ ‚éB‚¢‚¸‚ê‚à‰¡Ec‚É•À‚×‚éƒRƒ“ƒ^ƒNƒgorVIA‚ÌŒÂ”‚ðnx,ny‚ÅŽw’è‚·‚éB
+Epolycon_master.py : POL-ML1+ƒRƒ“ƒ^ƒNƒg(CNP)
+Encon_master.py : nACT-ML1+ƒRƒ“ƒ^ƒNƒg(CNA)
+Epcon_master.py : pACT-ML1+ƒRƒ“ƒ^ƒNƒg(CNA)
+Eml1via_master.py : ML1-ML2+VIA
+
+¦Glade‘€ìƒƒ‚
+EDisplayOption->Miscellaneous‚ÌAlways pop up option dialog‚ð‚Í‚¸‚·‚ÆAMove‚È‚Ç‚Ì‚½‚Ñ‚ÉƒIƒvƒVƒ‡ƒ“‰æ–Ê‚ª•\Ž¦‚³‚ê‚È‚¢iF3‚Å“K‹X•\Ž¦‚Å‚«‚éj
+Eschematic/symbol‚ðŠJ‚¢‚½ó‘Ô‚ÅCheckCellview‚·‚é‚ÆAMOSFET‚ÌƒCƒ“ƒXƒ^ƒ“ƒX‚ÍƒZƒ‹–¼‚Ìæ“ª‚ªM(spice‚ÅMOSFET‚ð‚ ‚ç‚í‚·)‚È‚ÇAŽ©“®‚Å‘fŽq–¼‚É‘Î‰ž‚µ‚½‚à‚Ì‚É‚È‚éB‚±‚ê‚ÍDisplayOptions->ObjectSettings‚É‚ ‚é"InstanceNames"‚ðPreserve‚É‚·‚é‚ÆAŽ©“®‚Å•ÏX‚³‚ê‚È‚­‚Å‚«‚éB
+
+
+----------------------------------------
 ƒXƒ^ƒZƒ‹ì¬Žž‚ÌŽwj
 StdCellƒ‰ƒCƒuƒ‰ƒŠ‚ðŠJ‚«AŠù‘¶‚ÌƒXƒ^ƒZƒ‹(inv1.gex‚È‚Ç)‚É‘Î‚µ‚ÄAˆÈ‰º‚ÌC³E’Ç‰Á‚ðs‚Á‚Ä‚¢‚­B
 E–¼Ì‚Ì•ÏX(––”ö‚Ì_v2.gex‚ðŽæ‚éBinv1_v2.gex -> inv1 ‚È‚Ç)
@@ -7,7 +56,7 @@ StdCellƒ‰ƒCƒuƒ‰ƒŠ‚ðŠJ‚«AŠù‘¶‚ÌƒXƒ^ƒZƒ‹(inv1.gex‚È‚Ç)‚É‘Î‚µ‚ÄAˆÈ‰º‚ÌC³E’Ç‰Á‚
 E‰ñ˜H}(schematics)‚Ìì¬iM†–¼‚Ílayout‚É‚ ‚í‚¹‚éBnMOS/pMOS‚ÍStdCellƒ‰ƒCƒuƒ‰ƒŠ“à‚Ìnch/pch‚ðA“dŒ¹‚Íbacisƒ‰ƒCƒuƒ‰ƒŠ“à‚ÌVDD/GND‚ðŽg—p‚·‚éj
 EƒVƒ“ƒ{ƒ‹(symbol)‚Ìì¬iˆÈ‰º‚Ì“_‚É—¯ˆÓ: inv1‚Ìsymbol‚ðŽQl‚Éj
   - •K‚¸Aschematicsì¬¨create cellview from cellview‚Ì—¬‚ê‚Åsymbol—p‚ÌƒZƒ‹‚ðì¬‚µAŽ©“®¶¬‚³‚ê‚½ƒsƒ“‚ÍÁ‚³‚È‚¢
-    Ž©“®¶¬‚³‚ê‚½ƒsƒ“‚ðÁ‚µ‚Ä‚µ‚Ü‚¤‚ÆAì¬‚µ‚½symbol‚ð‘¼‚ÌƒZƒ‹“à‚ÅŒÄ‚Ño‚µ‚½ÛA‘¼‚Ìsymbol‚Æ‚ÌÚ‘±‚ª”FŽ¯‚³‚ê‚È‚¢
+    ¦Ž©“®¶¬‚³‚ê‚½ƒsƒ“‚ðÁ‚µ‚Ä‚µ‚Ü‚¤‚ÆAì¬‚µ‚½symbol‚ð‘¼‚ÌƒZƒ‹“à‚ÅŒÄ‚Ño‚µ‚½ÛA‘¼‚Ìsymbol‚Æ‚ÌÚ‘±‚ª”FŽ¯‚³‚ê‚È‚¢(ver4.5.24‚Å‚ÌŠù’m‚ÌƒoƒO‚Å«—ˆC³—\’è‚Æ‚Ì‚±‚Æ)
   - ƒOƒŠƒbƒh‚Í1um’PˆÊ‚Æ‚µ‚ÄA­‚È‚­‚Æ‚àƒlƒbƒgiÔ‚¢ŽlŠpj‚ÍƒOƒŠƒbƒh‚Éæ‚¹‚éi‰Â”\‚È”ÍˆÍ‚Å‚·‚×‚Ä‚Ì}Œ`‚àj
   - ƒlƒbƒg–¼‚Ílayout, schematics‚É‚ ‚í‚¹‚é
   - net‚ðì‚é‚Æ‚«‚ÍA–¼‘O‚ðŽw’è‚·‚éi‹ó—“‚Åì¬‚µ‚Ä‚ ‚Æ‚©‚ç–¼Ì•ÏXA‚¾‚Æ‚¤‚Ü‚­‚¢‚©‚È‚¢ê‡‚ ‚èjB‚È‚¨net‚ÌProperty‚Å‚ÍAinstPin=1‚Æ‚È‚Á‚Ä‚¢‚é‚Í‚¸Binet‰ñ˜H}‚ÌƒlƒbƒgApin=ƒVƒ“ƒ{ƒ‹ã‚ÌÚ‘±“_‚ÅA—¼ŽÒ‚Íˆê”Ê‚É‚Íˆê’v‚·‚éj
@@ -21,49 +70,5 @@ StdCellƒ‰ƒCƒuƒ‰ƒŠ‚ðŠJ‚«AŠù‘¶‚ÌƒXƒ^ƒZƒ‹(inv1.gex‚È‚Ç)‚É‘Î‚µ‚ÄAˆÈ‰º‚ÌC³E’Ç‰Á‚
   - ŠO˜g‚ðboundary‚Ì’·•ûŒ`‚ÅˆÍ‚¤
   - symbol‚ðì¬‚µ‚½‚çA‰½‚à‘I‘ð‚µ‚Ä‚¢‚È‚¢ó‘Ô‚ÅƒZƒ‹‚ÌProperty‚ð•\Ž¦‚³‚¹ANum Net‚ÆNum Pin‚ªA•`‰æ‚µ‚Ä‚ ‚é’[Žq‚Ì”‚Æˆê’v‚µ‚Ä‚¢‚é‚±‚Æ‚ðŠm”F‚·‚éB
   - •Û‘¶‘O‚ÉCheck->CheckCellview‚µ‚½‚Ù‚¤‚ª‚¢‚¢B
-
 ¦‰Â”\‚È‚ç‚ÎAschematic‚Æsymbol‚ÅAVDD/GND‚ðbasic‚ÌƒVƒ“ƒ{ƒ‹‚Å‚Í‚È‚­Pin‚Æ‚µ‚Ä’u‚¢‚½‚à‚ÌiView–¼‚Ì––”ö‚ÉP‚ð‚Â‚¯‚éj‚àì¬(inv1‚ðŽQÆ)B‚±‚ê‚Í“dŒ¹“dˆ³‚ª•Ê‚È‚Ç“dŒ¹‚ª•ÊŒn“‚Ìê‡‚ÉŽg—p‚·‚éB‚È‚¨Ý’è‚Å"NetUse"‚ÅPOWER/GND‚ðŽw’è‚·‚éB
 
-ƒXƒ^ƒ“ƒ_[ƒhƒZƒ‹‚ÌŽg‚¢•û
-1. File->New Lib‚Åƒ‰ƒCƒuƒ‰ƒŠ‚ðì¬B‚±‚Ì‚Æ‚«ATechnology‚Åhibikino.tch‚ðŽw’è‚·‚éi‚±‚±‚ÅƒŒƒCƒ„’è‹`‚È‚Ç‚ªÝ’è‚³‚ê‚éj
-2. File->Import->Import GDS2‚ÅAstdcell_v2.gds‚ðŽw’è‚·‚éB‚±‚Ì‚Æ‚«“Ç‚Ýž‚Þƒ‰ƒCƒuƒ‰ƒŠ‚ðA1.‚Åì¬‚µ‚½ƒ‰ƒCƒuƒ‰ƒŠ‚ÉÝ’è‚·‚éB‚Ü‚½‚ÍFile->Open Library‚ÅA‚±‚±‚É‚ ‚é StdCell_v2‚ðŽw’è‚·‚éB
-3. ƒXƒ^ƒZƒ‹‚ª‚±‚Ìƒ‰ƒCƒuƒ‰ƒŠ‚É“Ç‚Ýž‚Ü‚ê‚é‚Ì‚ÅA‚±‚ê‚ðŽg‚Á‚ÄV‚µ‚¢‰ñ˜H(Cellview)‚ð‚Â‚­‚é
-
-DRCƒtƒ@ƒCƒ‹‚ÌŽg‚¢•û
-Verify->DRC->Run DRC (Shift+D)‚ÅA"hibikino-drc.py" ‚ðŽw’è‚µ‚ÄDRC‚ð‚©‚¯‚éB
-ƒGƒ‰[‚ª‚ ‚ê‚ÎVerify->DRC->View DRC Errors‚ÅŠm”F‚Å‚«‚é
-
-‰ñ˜H’Šo‚ÌŽg‚¢•û
-Verify->Extract->RunLVE‚ÅA"hibikino-ext.py"‚ðŽw’è‚·‚é‚ÆA‚»‚ÌƒZƒ‹‚É‘Î‚µ‚Äextracted‚Æ‚¢‚¤ƒrƒ…[‚ª‚Å‚«‚éB‰E‰º‚Ì"Net Browser"‚ÉAƒlƒbƒg–¼‚ªŒ»‚êA‚Ç‚ê‚©‚ð‘I‘ð‚·‚é‚ÆA‚»‚Ìƒlƒbƒg‚É‘Î‰ž‚·‚éƒIƒuƒWƒFƒNƒg‚ªƒnƒCƒ‰ƒCƒg‚³‚ê‚éB‚È‚¨ƒŒƒCƒAƒEƒg‚ÅAML1/ML2/POL‚É“¯‚¶ƒŒƒCƒ„‚Å‘‚¢‚½•¶Žš—ñi•¶Žš—ñ‚Ì§Œä“_‚ª‘ÎÛ}Œ`‚Ì’†‚É‚ ‚é‚±‚Æj‚ªA‚»‚Ìƒlƒbƒg‚Ìƒlƒbƒg–¼‚É‚È‚éBƒlƒbƒgƒŠƒXƒgƒtƒ@ƒCƒ‹‚Ìo—Í‚ÍAFile->Export->Export CDL‚ÅAi‚Ù‚ÚjspiceŒ`Ž®‚Åo—Í‚Å‚«‚éB
-
-‰ñ˜H}“ü—Í
-EMOS‚ÍStdCell_v2“à‚ÌƒZƒ‹nch/pch‚ðŽg‚¤B
-E“üo—Í‚ÍACreate->Pin‚Åƒsƒ“‚Æ‚µ‚ÄA–¼Ì‚ð‚Â‚¯‚Äì¬B
-EVDD/GND“™‚ÍAbasicƒ‰ƒCƒuƒ‰ƒŠ’†‚Ìvdd/gnd‚ðŽg‚¤B‚Ü‚½‚Í“üo—Í‚Æ“¯‚¶‚­ƒsƒ“‚Æ‚µ‚Äì¬‚·‚éB
-E‚±‚ê‚ç‚Ì’[ŽqiÔ‚¢ŽlŠpj‚ðWire‚ÅŒ‹‚ÔB
-‚È‚¨Wire‚ÍÅ‰‚Íƒlƒbƒg–¼‚ª‚Â‚¢‚Ä‚¢‚È‚¢‚ªACheck Cellview‚·‚é‚Æƒlƒbƒg–¼‚ª‚Â‚­B
-‚Â‚È‚ª‚Á‚Ä‚¢‚é‚Í‚¸‚È‚Ì‚É‚Â‚È‚ª‚Á‚Ä‚¢‚È‚¢i•‚‚¢‚Ä‚¢‚éjA‚Æ‚¢‚¤ƒGƒ‰[‚ªo‚é‚±‚Æ‚ª‚ ‚é‚ªAÄ“xCheck Cellview‚·‚é‚ÆŽ¡‚é‚±‚Æ‚à‚ ‚éi“ä‹““®jB
-’[“_‚Åwire‚Ì2‰ñ–Ú‚ðƒNƒŠƒbƒN‚·‚é‚ÆAwire”zü‚ªI‚í‚é‚Ì‚ÅA‚»‚ê‚Å‚Â‚È‚ª‚Á‚Ä‚¢‚é‚©‚Í”»’f‚Å‚«‚éi’[“_ã‚ÅƒNƒŠƒbƒN‚µ‚È‚¢‚Æwire”zü‚ª‘±‚­jB
-File->Export¨Export CDL‚Åi‚Ù‚ÚjspiceŒ`Ž®‚ÌƒlƒbƒgƒŠƒXƒg‚ðo—Í‚Å‚«‚éB
-
-LVS‚Ì‚©‚¯•û
-1.ƒŒƒCƒAƒEƒg("layout")‚ðŠJ‚«Aª‚ÌŽè‡‚Å‰ñ˜H’ŠoB"extracted"ƒrƒ…[‚ª¶¬‚³‚ê‚éB
-2."extracted"ƒrƒ…[‚ðŠJ‚«A‚»‚±‚©‚çVerify->LVS->Run LVS‚ÅLVS‚ðŽÀsB‰æ–Ê‚Ì‰E‘¤‚Åª‚Å‰ñ˜H}‚©‚çexport‚µ‚½ƒlƒbƒgƒŠƒXƒg(CDLŒ`Ž®)‚ðŽw’è‚·‚éB
-3.LVS‚ªŽÀŽ{‚³‚ê‚éB‚È‚¨MOSƒgƒ‰ƒ“ƒWƒXƒ^‚ÌƒTƒCƒY‚Ì•sˆê’v‚ÍŒŸo‚³‚ê‚È‚¢–Í—liÚ×–¢Šm”FjB
-
-PCell
-Pcell(parameterized cell)‚Æ‚ÍAMOSƒgƒ‰ƒ“ƒWƒXƒ^‚È‚Ç‚Ì—v‘f•”•i‚ðA‚»‚ÌŒ`óƒpƒ‰ƒ[ƒ^iƒQ[ƒg’·‚È‚Çj‚ðŽw’è‚µ‚ÄAŽ©“®“I‚ÉƒŒƒCƒAƒEƒg‚ðì¬‚·‚é‹@”\B
-(1)nMOS/pMOS—p
-1.nmos_master.py‚Æpmos_master.py‚ð‚Ç‚±‚©‚É’u‚«AŠÂ‹«•Ï”PYTHONPATH‚ðA‚»‚ÌƒfƒBƒŒƒNƒgƒŠ‚ÉÝ’è‚·‚éi‚È‚¢ê‡‚Íì¬AŠù‚É‚ ‚éê‡‚Í’Ç‰ÁjB‚Ü‚½‚Í‚±‚ê‚ç‚ðGlade‚ÌƒfƒBƒŒƒNƒgƒŠ(EEE/glade_win64/‚È‚Ç)‚É’u‚­B
-2.New->Cell‚ÅCell‚ðì¬‚·‚é‚Æ‚«A"CellView is a Pcell"‚ðƒ`ƒFƒbƒN‚µA"Pcell script"‚ÉA‚±‚ê‚ç‚Ì*.py‚ðŽw’è‚µAOK‚·‚é‚ÆAnmos_master‚Ü‚½‚Ínmos_master‚Ìlayout‚ªì¬‚³‚ê‚éB‚±‚ê‚ç‚ÌƒTƒCƒY‚Í•W€’l‚Åì¬‚³‚ê‚éBi‚±‚ÌƒZƒ‹‚ðsuper master‚ÆŒÄ‚Ôj
-3.Žg‚¢‚½‚¢ƒZƒ‹(layout)‚ÅAƒCƒ“ƒXƒ^ƒ“ƒXì¬(i)‚ÅACellName‚Åh_nmos‚Ü‚½‚Íh_pmos‚ð‘I‚ÑA ‚»‚Ì‚Æ‚«"Instance Property"ƒ^ƒu‚ÅAliƒQ[ƒg’·jAwiƒQ[ƒg•jAmiƒtƒBƒ“ƒK[”jApoly_coniƒQ[ƒg‚ÉƒRƒ“ƒ^ƒNƒg‚ð‘Å‚Â‚©j‚ðŽw’è‚µ‚ÄƒCƒ“ƒXƒ^ƒ“ƒX‚ðì¬‚·‚é‚ÆA‚»‚Ìƒpƒ‰ƒ[ƒ^‚Ì¡–@‚ÌMOSƒgƒ‰ƒ“ƒWƒXƒ^‚ª’u‚©‚ê‚éBi‚¤‚Ü‚­ì¬‚³‚ê‚È‚¢ê‡‚ª‚ ‚é‚æ‚¤‚¾‚ªA‚¢‚Á‚½‚ñì¬ŒãAƒCƒ“ƒXƒ^ƒ“ƒX‚ÌƒvƒƒpƒeƒB‚©‚ç‚±‚ê‚ç‚Ìƒpƒ‰ƒ[ƒ^‚ðC³‚·‚ê‚ÎA‚»‚ê‚É‰ž‚¶‚½ƒTƒCƒY‚ÌMOSƒgƒ‰ƒ“ƒWƒXƒ^‚É‚È‚éj
-
-(2)ƒRƒ“ƒ^ƒNƒgEVIA—p
-ˆÈ‰º‚Ì‚à‚Ì‚ª‚ ‚éB‚¢‚¸‚ê‚à‰¡Ec‚É•À‚×‚éƒRƒ“ƒ^ƒNƒgorVIA‚ÌŒÂ”‚ðnx,ny‚ÅŽw’è‚·‚éB
-Epolycon_master.py : POL-ML1+ƒRƒ“ƒ^ƒNƒg(CNP)
-Encon_master.py : nACT-ML1+ƒRƒ“ƒ^ƒNƒg(CNA)
-Epcon_master.py : pACT-ML1+ƒRƒ“ƒ^ƒNƒg(CNA)
-Eml1via_master.py : ML1-ML2+VIA
-
-Glade‘€ìƒƒ‚
-DisplayOption->Miscellaneous‚ÌAlways pop up option dialog‚ð‚Í‚¸‚·‚ÆAMove‚È‚Ç‚Ì‚½‚Ñ‚ÉƒIƒvƒVƒ‡ƒ“‰æ–Ê‚ª•\Ž¦‚³‚ê‚È‚¢iF3‚Å“K‹X•\Ž¦‚Å‚«‚éj
