@@ -1,7 +1,10 @@
 Glade用ひびきの設計関連ファイル(akita11)
 
+Gladeは、レイアウトや回路設計のためのCAD。フリーウエアで、Win/Mac/Linux対応。ところどころバグがあるが、ほとんどは問題なく使え、修正も速い。
+http://www.peardrop.co.uk/
+
 ○スタンダードセルの使い方
-1. https://github.com/akita11/MkLSI_Gladeからファイルを一式ダウンロードして展開する。
+1. https://github.com/akita11/MkLSI_Glade からファイルを一式ダウンロードして展開する。
 2. GladeのOpen->Libraryから、展開フォルダ内のStdCellを指定。inv1などの論理ゲートのlayout, symbol, schematicがあるはず。
 3. 新規に設計用のライブラリを、File->New Libでライブラリを作成。このとき、Technologyでhibikino.tchを指定する（ここでレイヤ定義などが設定される）※回路図作成は以下も参照
 3. 新しいschematicsやlayoutのセルをつくって、そこにStdCellからスタセル(論理ゲート)やnch/pch(単体のnMOS/pMOS)、P-Cellなどを呼び出してつないで回路をつくる。※P-Cellについては以下を参照
