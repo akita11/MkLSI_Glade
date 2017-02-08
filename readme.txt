@@ -6,7 +6,7 @@ http://www.peardrop.co.uk/
 ○スタンダードセルの使い方
 1. https://github.com/akita11/MkLSI_Glade からファイルを一式ダウンロードして展開する。
 2. GladeのOpen->Libraryから、展開フォルダ内のStdCellを指定。inv1などの論理ゲートのlayout, symbol, schematicがあるはず。
-3. 新規に設計用のライブラリを、File->New Libでライブラリを作成。このとき、Technologyでhibikino.tchを指定する（ここでレイヤ定義などが設定される）※回路図作成は以下も参照
+3. 新規に設計用のライブラリを、File->New Libでライブラリを作成。このとき、Technologyでhibikino.tchを指定する（ここでレイヤ定義などが設定される）。このとき、Unitをデフォルトの1000から100に変更すること。※回路図作成は以下も参照
 3. 新しいschematicsやlayoutのセルをつくって、そこにStdCellからスタセル(論理ゲート)やnch/pch(単体のnMOS/pMOS)、P-Cellなどを呼び出してつないで回路をつくる。※P-Cellについては以下を参照
 4. DRCやLVSで検証する
 
