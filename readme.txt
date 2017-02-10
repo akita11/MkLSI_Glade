@@ -20,7 +20,7 @@ Verify->Extract->RunLVEで、"hibikino-ext.py"を指定すると、そのセルに対してextrac
 ○回路図入力
 ・MOSはStdCell内のセルnch/pchを使う。
 ・入出力は、Create->Pinでピンとして、名称をつけて作成。
-・VDD/GND等は、basicライブラリ中のvdd/gndを使う。または入出力と同じくピンとして作成する。
+・VDD/GND等の電源は、入出力と同じくピンとして作成する。basicライブラリ中のvdd/gndを使ってもよいが、これらはデフォルトのnet名がvdd!/gnd!と"!"がついていて、後々のネット名の不整合の原因となる。
 ・これらの端子（赤い四角）をWireで結ぶ。
 なおWireは最初はネット名がついていないが、Check Cellviewするとネット名がつく。
 つながっているはずなのにつながっていない（浮いている）、というエラーが出ることがあるが、再度Check Cellviewすると治ることもある（謎挙動）。
@@ -29,8 +29,8 @@ File->Export→Export CDLで（ほぼ）spice形式のネットリストを出力できる。
 
 ○LVSのかけ方
 1.レイアウト("layout")を開き、↑の手順で回路抽出。"extracted"ビューが生成される。
-2."extracted"ビューを開き、そこからVerify->LVS->Run LVSでLVSを実行。画面の右側で↑で回路図からexportしたネットリスト(CDL形式)を指定する。
-3.LVSが実施される。なおMOSトランジスタのサイズの不一致は検出されない模様（詳細未確認）。
+2."extracted"ビューを開き、そこからVerify->LVS->Run LVSでLVSを実行。画面の右側で↑で回路図からexportしたネットリスト(CDL形式)を指定し、LVSを実行。このとき、
+階層構造を持つネットリストの場合は"Hierachical netlist?"をチェックしてglobaネット(電源など)とトップの回路(subckt)名を指定する。ただしver4.5.24では、このときに生成される*.cdl_flatがに、トランジスタサイズの単位を指定する「*.SCALE METER」が書き出されないため、一度*.cdl_flatを生成後、"*.SCALE METER"を追記し、改めて"Hierachical netlist?"のチェックをはずしてLVSをかければトランジスタサイズもチェックもOK。
 
 ○P-Cell
 P-Cell(parameterized cell)とは、MOSトランジスタなどの要素部品を、その形状パラメータ（ゲート長など）を指定して、自動的にレイアウトを作成する機能。
