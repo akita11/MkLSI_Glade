@@ -3,6 +3,9 @@ Glade用ひびきの設計関連ファイル(akita11)
 Gladeは、レイアウトや回路設計のためのCAD。フリーウエアで、Win/Mac/Linux対応。ところどころバグがあるが、ほとんどは問題なく使え、修正も速い。
 http://www.peardrop.co.uk/
 
+○Gladeのグリッド等の設定
+ひびきの設計ルールでは、座標の最小単位は1umなので、最初にDisplayOptions(E)の中のDisplaySettingsで、DisplayGridSettingsをX,Yともに1.0[um]に、SnapSettingsでSnapGridをX,Yともに1.0[um]に設定しておく。
+
 ○スタンダードセルの使い方
 1. https://github.com/akita11/MkLSI_Glade からファイルを一式ダウンロードして展開する。
 2. GladeのOpen->Libraryから、展開フォルダ内のStdCellを指定。inv1などの論理ゲートのlayout, symbol, schematicがあるはず。
