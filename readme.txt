@@ -10,7 +10,7 @@ http://www.peardrop.co.uk/
 1. https://github.com/akita11/MkLSI_Glade からファイルを一式ダウンロードして展開する。
 2. GladeのOpen->Libraryから、展開フォルダ内のStdCellを指定。inv1などの論理ゲートのlayout, symbol, schematicがあるはず。
 3. 新規に設計用のライブラリを、File->New Libでライブラリを作成。このとき、Technologyでhibikino.tchを指定する（ここでレイヤ定義などが設定される）。※回路図作成は以下も参照
-4. 新しいschematicsやlayoutのセルをつくって、そこにStdCellからスタセル(論理ゲート)やnch/pch(単体のnMOS/pMOS)、P-Cellなどを呼び出してつないで回路をつくる。※P-Cellについては以下を参照
+4. 新しいschematicsやlayoutのセルをつくって、そこにStdCellからスタセル(論理ゲート)、P-Cellなどを呼び出して、つないで回路をつくる。「呼び出し」は、インスタンス作成(i)から、呼び出すスタセルを指定すると、そのスタセルが自分の回路の中に置かれる。※P-Cellについては以下を参照。また呼び出すスタセルはStdCellの中のものを指定すること（自分の回路のライブラリにコピーしてから使わない）
 5. DRCやLVSで検証する
 
 ○DRCのかけかた
